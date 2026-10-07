@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile, access } from 'node:fs/promises';
+import { build, escapeHTML, safeURL } from './build.mjs';
+test('HTML escaping handles all dangerous delimiters',()=>assert.equal(escapeHTML('<script a="x">&\''),'&lt;script a=&quot;x&quot;&gt;&amp;&#39;'));
+test('URLs reject script and insecure protocols',()=>{assert.throws(()=>safeURL('javascript:alert(1)'));assert.throws(()=>safeURL('http://example.com'));assert.equal(safeURL('https://github.com/nodaysidle'),'https://github.com/nodaysidle');});
+test('production output renders every project and resolves local assets',async()=>{
+  const html = await build();
+  assert.equal((html.match(/class="project reveal"/g)||[]).length,5);
+  assert.ok(!html.includes('{{'));
+  assert.match(html,/<html lang="en">/);
+  assert.match(html,/Skip to content/);
+  for(const match of html.matchAll(/(?:src|href)="(\/[^"#]+)"/g)) await access(new URL('../dist'+match[1],import.meta.url));
+  for(const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(html.includes(`id="${match[1]}"`));
+  for(const match of html.matchAll(/<img [^>]*>/g)) assert.match(match[0],/alt="[^"]+"/);
+  assert.match(html,/mailto:nodaysidle@tutanota.de/);
+  const js=await readFile(new URL('../public/app.js',import.meta.url),'utf8');
+  assert.match(js,/prefers-reduced-motion/);
+  assert.match(js,/aria-pressed/);
+});

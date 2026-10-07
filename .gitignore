@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.vercel/
+.env*
+!.env.example
+artifacts/
+.vercel
