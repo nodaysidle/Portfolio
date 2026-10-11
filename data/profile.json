@@ -163,6 +163,103 @@
         "macOS 14+",
         "Local-First"
       ]
+    },
+    {
+      "id": "nodaysrammar",
+      "name": "nodaysrammar",
+      "isStar": false,
+      "tagline": "On-device Chromium grammar and spell checker for English, Italian and Slovenian",
+      "description": "Chrome Manifest V3 extension that checks grammar and spelling entirely on-device for English, Italian, and Slovenian. Uses ~35k-word frequency dictionaries, deterministic grammar rules, and a small JavaScript token classifier over fixed label tables — no remote inference, no telemetry, and works offline. Sideload-only from GitHub Releases; not listed on the Chrome Web Store. MIT licensed.",
+      "category": "Browser Extension",
+      "status": "v1.0.1 Shipped",
+      "badge": "Chrome MV3 • EN/IT/SL • Offline • MIT",
+      "repo": "https://github.com/nodaysidle/nodaysrammar",
+      "release": "https://github.com/nodaysidle/nodaysrammar/releases/tag/v1.0.1",
+      "highlights": [
+        "On-device EN/IT/SL checking with dictionaries, rules, and a small JS classifier",
+        "Works offline with zero telemetry; settings sync only via Chrome Sync",
+        "Sideload from the release zip — not listed on the Chrome Web Store"
+      ],
+      "tags": [
+        "Chrome MV3",
+        "Offline",
+        "EN/IT/SL",
+        "MIT",
+        "Zero Telemetry"
+      ]
+    },
+    {
+      "id": "kurek",
+      "name": "Kurek",
+      "isStar": false,
+      "tagline": "Voice assistant daemon for Arch Linux and Hyprland with 25 tools",
+      "description": "Headless voice assistant daemon for Arch Linux and Hyprland (kureksistant). Summoned via middle-click or Fn key with a ~0.8ms trigger dispatch (mock-daemon bench), 25 native tool modules, local faster-whisper speech-to-text, and ~450MB peak RAM with Whisper loaded. Requires your own DeepSeek and xAI API keys. Derived from FatihMakes' JARVIS under CC BY-NC 4.0 (non-commercial) — not MIT.",
+      "category": "Linux Voice Assistant",
+      "status": "v0.2.0 Shipped",
+      "badge": "Arch/Hyprland • DeepSeek • xAI • CC BY-NC 4.0",
+      "repo": "https://github.com/nodaysidle/kureksistant",
+      "release": "https://github.com/nodaysidle/kureksistant/releases/tag/v0.2.0",
+      "highlights": [
+        "25 native tools with ~0.8ms trigger dispatch (mock-daemon bench)",
+        "~450MB peak RAM with Whisper loaded; systemd user service on Arch/Hyprland",
+        "CC BY-NC 4.0 derivative of FatihMakes' JARVIS — bring your own DeepSeek and xAI keys"
+      ],
+      "tags": [
+        "Arch Linux",
+        "Hyprland",
+        "DeepSeek",
+        "xAI",
+        "Whisper",
+        "CC BY-NC 4.0"
+      ]
+    },
+    {
+      "id": "shareguard",
+      "name": "ShareGuard",
+      "isStar": false,
+      "tagline": "Local-first macOS pre-share privacy scanner for secrets and personal data",
+      "description": "Native macOS pre-share privacy scanner: drop files or folders, scan locally, and review a redacted risk report for secrets, private contact details, local paths, and suspicious share targets. Heuristic on-device detectors with no network calls, no external packages, no API keys, and no telemetry. Apple Silicon DMG for macOS 14+ (app build 0.1.0, published under release v0.1.2). Proprietary.",
+      "category": "Native macOS Systems",
+      "status": "v0.1.2 Shipped",
+      "badge": "macOS 14+ • Swift 6 • SwiftUI • Local-First",
+      "repo": "https://github.com/nodaysidle/nodaysidle-shareguard",
+      "release": "https://github.com/nodaysidle/nodaysidle-shareguard/releases/tag/v0.1.2",
+      "highlights": [
+        "Drag-and-drop recursive scan with redacted secret and personal-data hints",
+        "No network calls, telemetry, accounts, or cloud sync — fully local-first",
+        "Apple Silicon DMG (ShareGuard-0.1.0.dmg) from the v0.1.2 release"
+      ],
+      "tags": [
+        "Swift 6",
+        "SwiftUI",
+        "macOS 14+",
+        "Privacy",
+        "Local-First"
+      ]
+    },
+    {
+      "id": "nodaysidle-browser-linux",
+      "name": "NODAYSIDLE Browser for Linux",
+      "isStar": false,
+      "tagline": "Native Linux browser built with Rust, GTK 3, and WebKitGTK 4.1",
+      "description": "Deliberately small native Linux browser for focused browsing: Rust + GTK 3 + WebKitGTK 4.1, no Electron runtime, and no application telemetry. Ships as a 1.5MB x86_64 AppImage (host GTK 3 and WebKitGTK 4.1 required) with multi-tab browsing, in-page find, downloads, and local-first history/cookies.",
+      "category": "Native Linux Systems",
+      "status": "v0.1.0 Shipped",
+      "badge": "Linux x86_64 • Rust • GTK 3 • WebKitGTK 4.1",
+      "repo": "https://github.com/nodaysidle/nodaysidle-browser-linux",
+      "release": "https://github.com/nodaysidle/nodaysidle-browser-linux/releases/tag/v0.1.0",
+      "highlights": [
+        "Rust + GTK 3 + WebKitGTK 4.1 AppImage at 1.5MB — no Electron footprint",
+        "Multi-tab browsing, in-page find, downloads, local history and cookies",
+        "Wayland app_id / X11 WM_CLASS: com.nodaysidle.Browser"
+      ],
+      "tags": [
+        "Rust",
+        "GTK 3",
+        "WebKitGTK",
+        "AppImage",
+        "Linux"
+      ]
     }
   ],
   "stack": {
