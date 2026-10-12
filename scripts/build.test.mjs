@@ -6,7 +6,7 @@ test('HTML escaping handles all dangerous delimiters',()=>assert.equal(escapeHTM
 test('URLs reject script and insecure protocols',()=>{assert.throws(()=>safeURL('javascript:alert(1)'));assert.throws(()=>safeURL('http://example.com'));assert.equal(safeURL('https://github.com/nodaysidle'),'https://github.com/nodaysidle');});
 test('production output renders every project and resolves local assets',async()=>{
   const html = await build();
-  assert.equal((html.match(/class="project reveal"/g)||[]).length,9);
+  assert.equal((html.match(/class="project reveal"/g)||[]).length,8);
   assert.ok(!html.includes('{{'));
   assert.match(html,/<html lang="en">/);
   assert.match(html,/Skip to content/);
