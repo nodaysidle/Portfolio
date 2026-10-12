@@ -168,7 +168,7 @@
       "name": "Kurek",
       "isStar": false,
       "tagline": "Voice assistant daemon for Arch Linux and Hyprland with 25 tools",
-      "description": "Headless voice assistant daemon for Arch Linux and Hyprland (kureksistant). Summoned via middle-click or Fn key with a ~0.8ms trigger dispatch (mock-daemon bench), 25 native tool modules, local faster-whisper speech-to-text, and ~450MB peak RAM with Whisper loaded. Requires your own DeepSeek and xAI API keys. Derived from FatihMakes' JARVIS under CC BY-NC 4.0 (non-commercial) — not MIT.",
+      "description": "Headless voice assistant daemon for Arch Linux and Hyprland (kureksistant). Summoned via middle-click or Fn key with a ~0.8ms trigger dispatch (mock-daemon bench), 25 native tool modules, local faster-whisper speech-to-text, and ~450MB peak RAM with Whisper loaded. Offers voice control of your PC, including remotely from an Android app over Tailscale (token-authenticated). Requires your own DeepSeek and xAI API keys. Derived from FatihMakes' JARVIS under CC BY-NC 4.0 (non-commercial) — not MIT.",
       "category": "Linux Voice Assistant",
       "status": "v0.2.0 Shipped",
       "badge": "Arch/Hyprland • DeepSeek • xAI • CC BY-NC 4.0",
