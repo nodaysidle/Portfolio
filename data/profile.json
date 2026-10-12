@@ -140,31 +140,6 @@
       ]
     },
     {
-      "id": "nodaysidle-browser",
-      "name": "NODAYSIDLE Browser",
-      "isStar": false,
-      "tagline": "Surgical, telemetry-free native macOS browser built on Swift 6 and WebKit",
-      "description": "Focused native macOS browser engineered with zero Electron overhead, zero trackers, and zero background analytics. Features a single @Observable @MainActor state store, native tabs with ⌘K tab palette, local session persistence, and an encrypted CryptoKit vault for private bookmark and history syncing.",
-      "category": "Native macOS Systems",
-      "status": "v1.0.0 Stable",
-      "badge": "macOS 14+ • Swift 6 • SwiftUI • WebKit • CryptoKit",
-      "repo": "https://github.com/nodaysidle/nodaysidle-browser",
-      "release": "https://github.com/nodaysidle/nodaysidle-browser",
-      "highlights": [
-        "100% native Swift 6 and WebKit architecture with zero Electron footprint",
-        "Local-first persistence with encrypted CryptoKit sync vault",
-        "Zero analytics, telemetry, or application-owned browsing backend"
-      ],
-      "tags": [
-        "Swift 6",
-        "SwiftUI",
-        "WebKit",
-        "CryptoKit",
-        "macOS 14+",
-        "Local-First"
-      ]
-    },
-    {
       "id": "nodaysrammar",
       "name": "nodaysrammar",
       "isStar": false,
